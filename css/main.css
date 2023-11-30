@@ -1,0 +1,1056 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+html {
+  box-sizing: border-box;
+}
+*,*:before,*:after{
+  box-sizing: inherit;
+}
+body {
+  background-color: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+}
+/** Globales **/
+.contenedor {
+  width: 98%;
+  margin: 0 auto;
+}
+@media only screen and (min-width:480px) {
+  .contenedor {
+    width: 95%;
+  }
+}
+@media only screen and (min-width:768px) {
+  .contenedor {
+    width: 90%;
+  }
+}
+@media only screen and (min-width:992px) {
+  .contenedor {
+    width: 90%;
+    max-width: 1100px;
+  }
+}
+.seccion {
+  padding: 30px 0;
+}
+.seccion p {
+  font-size: 1.2em;
+  text-align: center;
+}
+h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.4em;
+  text-transform: uppercase;
+  text-align: center;
+}
+h2::after {
+  content: '';
+  margin: 0 auto;
+  background-image: url(../img/separador.png);
+  height: 30px;
+  width: 100px;
+  display: block;
+}
+h3 {
+  font-size: 1.8em;
+  color: #fe4918;
+  font-family: 'PT Sans', sans-serif;
+  margin: 0;
+}
+.button {
+  background-color: #fe4918;
+  padding: 10px 40px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Oswald', sans-serif;
+  text-decoration: none;
+  font-size: 1em;
+  margin-top: 20px;
+  display: inline-block;
+  transition: all .3s ease;
+}
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.button:hover{
+  background-color: #e33000;
+}
+.float-right {
+  float: right;
+}
+/** header **/
+
+div.hero {
+  background-image: url(../img/encabezado.jpg);
+  height: 100vh;
+  background-position: top center;
+  background-size: cover;
+}
+div.contenido-header {
+  padding-top: 40px;
+}
+@media only screen and (min-width: 768px){
+  div.contenido-header {
+    padding-top: 10px;
+  }
+}
+nav.redes-sociales {
+  text-align: center;
+}
+nav.redes-sociales a {
+  color: #05183c;
+  font-size: 2em;
+  margin-right: 20px;
+}
+nav.redes-sociales a:last-child{
+  margin-right: 0;
+}
+div.informacion-tienda {
+  text-align: center;
+  color: #05183c;
+}
+@media only screen and (min-width: 768px){
+  div.informacion-tienda {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+}
+div.informacion-tienda p {
+  margin: 0;
+  display: inline;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+div.informacion-tienda p i{
+  color: #fe4918;
+  font-size: 2.4rem;
+}
+p.Ciudad {
+  float: left;
+}
+p.Institucion {
+  float: right;
+  text-align: right;
+}
+p.slogan{
+  text-transform: none!important;
+}
+p.slogan span {
+  font-weight: bold;
+}
+h1.nombre-sitio {
+  color: #05183c;
+  font-size: 5.9vw;
+  text-transform: uppercase;
+  font-family: 'PT Sans', sans-serif;
+}
+@media only screen and (min-width: 768px){
+  h1.nombre-sitio {
+    font-size: 8.5vw;
+    margin: 0;
+    line-height: 1;
+  }
+}
+/** Barra **/
+div.barra {
+  background-color: #353535;
+  padding: 20px 0;
+}
+div.logo {
+  width: 80%;
+  float: left;
+}
+div.logo img {
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  div.logo {
+    width: 33%;
+  }
+}
+
+/** Nav principal **/
+nav.navegacion-principal {
+  display: none;
+}
+
+nav.navegacion-principal a{
+  font-family: 'Oswald', sans-serif;
+  color: #000000;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all .6s ease;
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+nav.navegacion-principal a:hover {
+  background-color: #fe4918;
+}
+nav.navegacion-principal a:last-child {
+  border: 2px solid #fe4918;
+  color: #fe4918;
+}
+nav.navegacion-principal a:last-child:hover {
+  color: #000000;
+}
+@media only screen and (min-width: 768px) {
+  nav.navegacion-principal {
+    width: 67%;
+    float: right;
+    text-align: right;
+    display: block;
+  }
+  nav.navegacion-principal a{
+    margin-right: 10px;
+    padding: 10px 10px;
+    display: inline-block;
+    width: auto;
+    display: inline-inline-block;
+    text-align: center;
+    margin:0 10px 0 0;
+  }
+}
+/** Menu Movil **/
+div.menu-movil {
+  width: 60px;
+  display: block;
+  float: right;;
+  text-align: right;
+  margin-top: 12px;
+}
+div.menu-movil:hover {
+  cursor: pointer;
+}
+@media only screen and (min-width: 768px) {
+  div.menu-movil {
+    display: none;
+  }
+}
+div.menu-movil span {
+  height: 8px;
+  margin-bottom: 6px;
+  background-color: Black;
+  display: block;
+}
+
+/**Celulares**/
+section.Top-Ventas {
+  position: relative;
+}
+
+div.contenedor-video {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+div.Top-dispositivos {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+div.ventas {
+  background-color: rgba(255, 255, 255, .8);
+  padding: 15px;
+  margin-top: 80px;
+}
+nav.menu-top {
+  width: 100%;
+  border-bottom: 1px solid #fe4918;
+  padding-bottom: 10px;
+}
+@media only screen and (min-width: 768px) {
+    nav.menu-top {
+      display: table;
+    }
+}
+nav.menu-top a {
+  display: block;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+@media only screen and (min-width: 768px) {
+    nav.menu-top a {
+      display: table-cell;
+    }
+}
+nav.menu-top a i,
+div.detalle-celulares p i {
+  color: #fe4918;
+  font-size: 1.6em;
+  margin-right: 10px;
+}
+div.detalle-tabletas p i,
+div.detalle-laptops p i{
+  color: #fe4918;
+  font-size: 1.6em;
+  margin-right: 10px;
+    /* Estilos idénticos al de celulares */
+}
+
+/* Si deseas estilos específicos para cada sección, simplemente los agregas a continuación. */
+
+/**Detalle celulares**/
+div.detalle-celulares,
+div.detalle-tabletas,
+div.detalle-laptops{
+  margin-top: 20px;
+  border-bottom: 1px solid black;
+  padding: 0 20px;
+}
+div.detalle-celulares:nth-child(2),
+div.detalle-tabletas:nth-child(2),
+div.detalle-laptops:nth-child(2){
+  border: none;
+}
+div.detalle-celulares p,
+div.detalle-tabletas p,
+div.detalle-laptops p{
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+/**Productos**/
+ul.lista-productos li {
+  padding: 10px;
+  float: left;
+}
+@media only screen and (min-width:480px){
+  ul.lista-productos li {
+    width: 50%;
+  }
+}
+@media only screen and (min-width:768px){
+  ul.lista-productos li {
+    width: 33.3%;
+  }
+}
+div.producto {
+  position: relative;
+  overflow: hidden;
+}
+div.producto img {
+  width: 300px;
+  height: 250px;
+  filter: gray;
+  -webkit-filter: grayscale(1);
+  transition: all 0.5s ease-in-out; /* También puedes aplicar la transición sin el prefijo -webkit- */
+}
+
+div.producto:hover img {
+  -webkit-filter: grayscale(0);
+  transform: scale(1.1); /* Corregido aquí */
+}
+div.producto p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 15px 10px;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  width: 100%;
+  text-align: left;
+  font-family: 'Oswald', sans-serif;
+  color: #fe4918;
+  text-transform: uppercase;
+  -webkit-transition: all .5s ease-in-out;
+}
+div.producto:hover p{
+  bottom: -80px;
+  opacity: 0;
+
+}
+
+/* Agregamos un fondo a todo el cuerpo */
+body {
+  background-image: url("/img/fondo.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+.material-icons.red {
+  color: red;
+}
+.material-icons.blue {
+  color: blue;
+}
+.material-icons.green {
+  color: green;
+}
+.material-icons.violet {
+  color: violet;
+}
+h1 {
+  font-size: 46px; /* Aumenta el tamaño de fuente según tu preferencia */
+  text-align: center;
+  font-family: "Fuggles", cursive, "Roboto", sans-serif;
+  animation-name: titulo;
+  animation-duration: 2s;
+  color: aliceblue;
+}
+@keyframes titulo {
+  0% {
+    font-size: 12px;
+  }
+  25% {
+    font-size: 14px;
+  }
+  50% {
+    font-size: 22px;
+  }
+  100% {
+    font-size: 24px;
+  }
+}
+#galeria {
+  width: 100%;
+  text-align: center;
+}
+#galeria ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Distribuye los elementos horizontalmente */
+}
+#galeria ul li {
+  flex: 0 0 calc(33.333% - 20px); /* Tres elementos por fila con espacio entre ellos */
+  margin: 10px;
+}
+#galeria ul li div {
+  display: flex;
+  flex-direction: column; /* Apila elementos verticalmente */
+  justify-content: center; /* Centra verticalmente los elementos */
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  bottom: 0;
+  transition: background-color 0.3s;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+}
+
+#galeria ul li div span.material-icons.red {
+  font-size: 24px;
+  margin-bottom: 5px; /* Agrega espacio entre el ícono y el texto */
+}
+#galeria ul li div span.material-icons.blue {
+  font-size: 24px;
+  margin-bottom: 5px; /* Agrega espacio entre el ícono y el texto */
+}
+#galeria ul li div span.material-icons.green {
+  font-size: 24px;
+  margin-bottom: 5px; /* Agrega espacio entre el ícono y el texto */
+}
+#galeria ul li div span.material-icons.violet {
+  font-size: 24px;
+  margin-bottom: 5px; /* Agrega espacio entre el ícono y el texto */
+}
+#galeria ul li:hover div {
+  background-color: rgba(0, 0, 0, 0.8); /* Cambia el fondo al pasar el mouse */
+}
+#galeria img {
+  width: 400px; /* Establece el ancho deseado */
+  height: 350px; /* Establece la altura deseada */
+}
+/* Estilos para el botón del menú desplegable */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropbtn {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px; /* Agrega bordes redondeados */
+}
+.dropbtn .material-icons {
+  font-size: 24px;
+  vertical-align: middle;
+}
+.dropbtn:hover {
+  background-color: #555;
+}
+/* Estilos para el menú desplegable */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #a7a5a5;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px; /* Agrega bordes redondeados */
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Estilos para el icono del carrito y el menú desplegable */
+.carrito-icono {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  z-index: 999; /* Asegura que el icono esté sobre otros elementos */
+  color: black; /* Color del icono */
+  font-size: 36px; /* Tamaño más grande del icono */
+}
+
+.menu-carrito {
+  display: none;
+  position: fixed;
+  right: 10px;
+  top: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background-color: #ffffff; /* Fondo semitransparente oscuro */
+  color: #333; /* Texto en blanco para contraste */
+  font-size: 0.9em;
+  z-index: 1000;
+  width: 300px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px; /* Bordes redondeados */
+  overflow: hidden; /* Asegura que todo quede dentro de los bordes redondeados */
+}
+
+.menu-carrito ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-carrito ul li {
+  padding: 10px;
+  border-bottom: 1px solid #555;
+  transition: background-color 0.3s; /* Transición para el efecto al pasar el mouse */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-carrito ul li:last-child {
+  border-bottom: none; /* Elimina la línea del último elemento */
+}
+
+.menu-carrito ul li:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Efecto al pasar el mouse */
+}
+
+.menu-carrito .total-carrito {
+  font-weight: bold; /* Texto en negrita para el total */
+  text-align: right; /* Alineación a la derecha del total */
+  padding-top: 10px; /* Espacio por encima del total */
+}
+
+.menu-carrito .material-icons:hover {
+  color: #ff0000; /* Cambia el color al pasar el mouse para indicar acción */
+}
+
+.menu-carrito ul li button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.menu-carrito ul li button:hover {
+  text-decoration: underline; /* Efecto al pasar el mouse sobre el botón */
+}
+
+/* Estilos para los botones de "Añadir al carrito" en cada imagen */
+#galeria ul li button {
+  background-color: #333; /* Color de fondo oscuro */
+  color: white; /* Texto en blanco */
+  border: none; /* Sin bordes */
+  padding: 8px 16px; /* Espaciado interno */
+  font-size: 14px; /* Tamaño de la fuente */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cursor en forma de puntero */
+  transition: background-color 0.3s; /* Transición suave para el color de fondo */
+}
+
+#galeria ul li button:hover {
+  background-color: #555; /* Cambiar color al pasar el mouse */
+}
+
+/* Estilos para el contador de artículos en el carrito */
+#contadorCarrito {
+  display: inline-block;
+  background-color: #ff4500; /* Un color que combine con tu diseño */
+  color: white;
+  padding: 0.3em 0.6em; /* Espaciado interno para dar forma al círculo */
+  font-family: 'Roboto', sans-serif; /* Asegúrate de usar la misma familia de fuentes que el resto de tu página */
+  font-size: 1em; /* Ajusta esto para que el tamaño del texto coincida con tu diseño */
+  font-weight: bold;
+  line-height: 1; /* Esto ayuda a mantener la forma del círculo */
+  border-radius: 50%; /* Redondea las esquinas para formar un círculo */
+  position: fixed; /* Posición absoluta con respecto al ícono del carrito */
+  top: 5px; /* Ajusta estos valores según sea necesario */
+  right: 50px;
+  z-index: 1001; /* Asegúrate de que el contador esté por encima del ícono del carrito */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Sombra suave para resaltar el contador */
+  border: 2px solid white; /* Borde blanco para hacerlo resaltar sobre cualquier fondo */
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.mensaje-carrito-vacio {
+  color: #fff; /* Texto en blanco para contraste */
+  background-color: rgba(33, 33, 33, 0.9); /* Fondo oscuro semitransparente para mantener la coherencia con el menú del carrito */
+  text-align: center; /* Centrar el texto horizontalmente */
+  padding: 20px; /* Espacio alrededor del texto */
+  margin: 10px 20px; /* Margen alrededor del mensaje dentro del carrito */
+  font-size: 1.2em; /* Tamaño de fuente moderado para legibilidad */
+  border-radius: 5px; /* Bordes redondeados suaves */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidad */
+  border: 1px solid #fff; /* Borde sutil para definir el elemento */
+  display: block; 
+  position: relative; /* Posicionamiento relativo para ajustarse dentro del carrito */
+  z-index: 10; /* Asegura que el mensaje esté por encima de otros elementos, si es necesario */
+}
+
+.button.pagar {
+  background-color: #ff4500; /* Verde estándar para acciones de 'comprar' o 'pagar' */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px auto; /* Centrado horizontalmente en el carrito */
+  display: block; /* Asegúrate de que el botón sea un bloque para aplicar el margen automático */
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 5px; /* Bordes redondeados para el botón */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad y destacar */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Transición para hover */
+}
+
+.button.pagar:hover {
+  background-color: #ff4500; /* Un tono más oscuro de verde para el hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra más prominente para hover */
+}
+
+/***Tabla de precios***/
+ul.lista-precios {
+  list-style-type: none; /* Elimina los estilos de lista predeterminados */
+  margin: 0; /* Elimina los márgenes predeterminados */
+  padding: 0; /* Elimina el padding predeterminado */
+  display: flex; /* Activa Flexbox */
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+  gap: 20px; /* Establece un espacio entre los elementos */
+}
+
+ul.lista-precios > li {
+  flex: 1 1 calc(33.3% - 20px); /* Ajusta el tamaño base de los elementos y permite el encogimiento y crecimiento */
+  margin-bottom: 20px; /* Espacio debajo de cada elemento de precio */
+}
+
+div.tabla-precio {
+  border: 1px solid #e1e1e1; /* Estilo del borde */
+  padding: 40px 40px; /* Padding interno para el contenido */
+  background-color: #ffffff;
+  text-align: justify;
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+  ul.lista-precios > li {
+    flex-basis: 100%; /* En pantallas pequeñas, cada elemento toma el ancho completo */
+  }
+}
+
+div.tabla-precio ul li {
+  font-family:'PT Sans', sans-serif;
+  font-size: 14px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #868686;
+  line-height: 26px;
+}
+
+div.tabla-precio h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+
+}
+
+p.numero {
+  color: #fe4918;
+  font-size: 4em;
+  display: block;
+  margin: 0 0 10px 0;
+  font-family: 'Oswald', sans-serif;
+}
+
+div.tabla-precio p.numero {
+  color: #000000;
+  margin: 10px 0;
+}
+  
+/*Footer*/
+footer{
+  background-color: #353535;
+  padding-top: 40px;
+  margin-top: 20px;
+}
+
+footer .contenedor > div{
+  color: #ffffff;
+  padding: 0px 20px;
+  font-size: 12px;
+}
+
+@media only screen and (min-width: 768px){
+  footer .contenedor > div{
+    width: 33.3%;
+    float: left;
+  }
+}
+
+footer h3{
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: 20px;
+
+}
+
+footer h3 span{
+  color: #fe4918;
+}
+
+footer .contacto li{
+  margin-bottom: 10px;
+}
+
+footer nav.redes-sociales{
+  text-align: left;
+}
+
+p.copyright {
+  background-color: #2e2e2e;
+  color: #ffffff;
+  padding: 20px 0 0 0;
+  margin: 0;
+  text-align: center;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

@@ -1,0 +1,118 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    background: #ffffff;
+    padding: 30px;
+    margin: 15px;
+    width: 100%;
+    max-width: 400px;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    color: #666;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="month"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Agrega box-sizing para que padding no afecte el ancho */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff4500; /* Verde estándar para acciones de 'comprar' o 'pagar' */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff4500; /* Un tono más oscuro de verde para el hover */
+}
+
+/* Estilos adicionales si necesitas ajustar los inputs de fecha y CVV para que se alineen en una sola línea */
+.form-group.inline-inputs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group.inline-inputs label,
+.form-group.inline-inputs input {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.form-group.inline-inputs label:last-child,
+.form-group.inline-inputs input:last-child {
+    margin-right: 0;
+}
+
+.header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 30px;
+}
+
+.logo {
+    max-width: 150px; /* O el tamaño que prefieras */
+    margin-bottom: 10px;
+}
+
+.order-summary {
+    background-color: #f9f9f9; /* Fondo claro para el resumen */
+    border: 1px solid #ddd; /* Borde sutil */
+    padding: 15px; /* Espaciado interior */
+    border-radius: 8px; /* Bordes redondeados */
+    margin-bottom: 20px; /* Margen inferior para separación */
+}
+
+.order-summary h3 {
+    color: #333; /* Color del texto para el título */
+    margin-bottom: 15px; /* Espaciado debajo del título */
+    text-align: center; /* Centrar el título */
+}
+
+.order-summary p {
+    color: #555; /* Color del texto para los detalles */
+    margin: 5px 0; /* Espaciado vertical entre detalles */
+    line-height: 1.4; /* Espaciado de línea para mejorar la legibilidad */
+}
+
+.order-total {
+    font-weight: bold; /* Texto en negrita para el total */
+    margin-top: 10px; /* Espacio antes del total */
+    text-align: right; /* Alinear el total a la derecha */
+    color: #fe4918; /* Color para resaltar el total */
+}
+
